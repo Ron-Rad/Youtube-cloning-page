@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+ /* nav style */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+    padding: 0 16px;
+}
+
+.nav .material-symbols-outlined:hover{
+    background-color: #dadada;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.search-section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* logo style */
+.logo-section .material-symbols-outlined{
+    padding: 8px;
+}
+
+.logo-section{
+    display: flex;
+    align-items: center;
+}
+
+.logo-section >svg{
+    margin: 18px 14px 18px 16px;  
+}
+
+/* search bar style */
+.searchbar{
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 50px;  
+    height: 40px;
+}
+
+.searchbar >input{
+    width: 380px;
+    height: 10px;
+    outline: none;
+    border: none;
+    padding: 0 0 0 16px;
+    border-top-left-radius: 50px; 
+    border-bottom-left-radius: 50px;
+}
+
+.searchbar > button{
+    width: 64px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: none;
+    height: 39px;
+}
+
+.searchbar > button:hover{
+    background-color: #dadada;
+    cursor: pointer;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.mic-icon{
+    background-color: #f1f1f1;
+    padding: 8px;
+    border-radius: 50px;
+}
+
+/* icons on navbar styles */
+.icon-section{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-section .material-symbols-outlined{
+    padding: 8px;
+}
+
+/* sidebar style */
+.content{
+    display: flex;
+}
+
+.sidebar{
+    width: 280px;
+    height: calc(100vh - 56px);
+    overflow-y: scroll;
+    padding: 12px;
+}
+
+.sidebar-cat {
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    
+}
+
+.cat {
+    padding: 0 12px;
+    border-bottom: 1px solid lightgray;
+  
+}
+
+.sidebar-cat p{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 12px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.sidebar-cat p:hover{
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+
+.sidebar-cat p span{
+    margin: 0 20px 0 0;
+}
+
+.sidebar-cat h3{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 12px;
+}
+
+.active{ 
+    background-color: #f1f1f1;
+    font-weight: 500;
+}
+
+.sidebar-cat .active:hover{
+    background-color: #dddddd;
+    font-weight: bold;
+}
+
+ .footer-section{
+    padding: 8px 20px;
+    font-size: 13px;
+}  
+
+.sidebar-footer a{
+    text-decoration: none;
+    cursor: pointer;
+    color: gray;
+}
+
+.copyright{
+    padding: 12px 12px;
+    font-size: 16px;
+    color: #909090;
+}
+
+/* videos style */
+.videos{
+    width: calc(100vw - 280px);
+    height: calc(100vh - 56px);
+    padding: 15px;
+    overflow-y: scroll;
+}
+.video-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.video{
+    width: calc(20% - 12px);
+}
+
+.video .thumbnail{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.thumbnail:hover{
+    border-radius: 0px;
+    cursor: pointer;
+}
+.video_details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.video_details .material-symbols-outlined{
+    width: 36px;
+    height: 36px;
+    font-size: 36px;
+    border-radius: 50px;
+}
+
+.video_details:hover{
+    cursor: pointer;
+}
+
+.video-details-text:hover{ 
+    text-decoration: underline;
+}
+
+.video_details_text p{
+color: gray;
+font-size: 14px;
+}
+
+@media(max-width: 1520px){
+    .video{
+        width: calc(20% - 12px);
+    }
+
+}
+
+@media(max-width: 1295px){
+    .video{
+        width: calc(33.33% - 12px);
+    }
+
+}
+
+@media(max-width: 1025px){
+    .video{
+        width: calc(50% - 12px);
+    }
+
+}
+
+@media(max-width: 960px){
+    .video{
+        width: calc(100% - 12px);
+    }
+    .icon-section{
+        display: none;
+    }
+}
+
+@media(max-width: 768px){
+    .video{
+        width: calc(100% - 12px);
+    }
+    .sidebar{
+        display: none;
+    }
+}
